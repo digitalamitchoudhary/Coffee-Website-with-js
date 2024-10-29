@@ -1,0 +1,332 @@
+   
+@media screen and (max-width:900px) {
+    :root {
+        /* Font size */
+
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+
+    }
+
+    /* body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    } */
+    .navbar :is(#menu-open-button, #menu-close-button) {
+        font-size: var(--font-size-l);
+        display: block;
+    }
+
+
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+
+    }
+
+    .navbar #menu-open-button {
+        color: var(--white-color);
+
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        background-color: var(--white-color);
+        color: var(--primary-color);
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        transition: left 0.2s ease;
+
+    }
+
+    /* body.show-mobile-menu .navbar .nav-menu {
+        left: 0;
+    } */
+
+    .navbar .nav-menu .nav-link {
+        color: var(--dark-color);
+        font-size: var(--font-size-l);
+        margin-top: 17px;
+        display: block;
+
+    }
+
+    .banner-section .section-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        padding: 30px 20px 20px;
+
+    }
+
+    .banner-section .section-content :is(.subtitle, .description) {
+        max-width: 100%;
+    }
+
+    .banner-section .second-image-wrapper {
+        width: 270px;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+    .banner-section .buttons {
+        justify-content: center;
+    }
+    .contact-section .section-content {
+        flex-direction: column-reverse;
+    
+    }
+}
+ 
+@media screen and (max-width:1024px) {
+
+
+    .banner-section .section-content :is(.title, .subtitle, .description) {
+        max-width: 80%;
+        margin-left: 10px;
+    }
+
+
+    .banner-section .second-image-wrapper {
+        width: 500px;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+
+    .about-section {
+        padding: 80px 60px 80px 60px;
+    }
+
+    .aboutcontent .section-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .aboutcontent .about-text {
+        font-size: var(--font-size-sm);
+    }
+
+    .myabout {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-text {
+        margin: 20px 0 20px;
+    }
+
+    .aboutimg .img {
+        height: 100%;
+        object-fit: cover; 
+        width: 100%;
+        border-radius: 50%;
+    }
+ 
+
+    .food-menu {
+        padding: 20px 0 50px;
+    }
+
+   .food-menu-section .section-title {
+        padding: 60px 0 50px;
+    }
+
+    .menu-list .menu-item .menu-image {
+        width: 70%;
+    }
+
+    .food-menu .menu-list .menu-item .name {
+        margin: 10px 0;
+        font-size: var(--font-size-m);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .food-menu .menu-list .menu-item .text {
+        font-size: var(--font-size-sn);
+    }
+
+    .food-menu .menu-list {
+
+        gap: 60px;
+    }
+
+    .menu-list .menu-item {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% / 3 - 60px);
+    }
+
+
+   
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    .navbar{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100%  - 100px);
+    }
+
+    .first-deatails{
+        margin-bottom: 20px;
+    }
+    .banner-section .section-content .title {
+        font-size: 50px;
+        margin-bottom: 20px;
+    
+    }
+    .banner-section .section-content :is(.title, .subtitle) {
+        max-width: 100%;
+    
+    }
+    .banner-section .section-content .description {
+        max-width: 80%;
+        margin: 30px auto 50px;
+    }
+    .banner-section .section-content {
+       
+        gap: 30px}
+
+    .banner-section .second-image-wrapper {
+        width: 450px;
+        margin: auto;
+    }
+} 
+
+
+@media screen and (min-width: 509px) and (max-width: 767px) {
+
+    .navbar{
+        margin-left: 20px;
+        margin-left: 20px;
+        width: calc(100%  - 80px);
+    }
+
+    /* .banner-section .section-content{
+        max-width: 100px;
+    } */
+    .banner-section .section-content .title {
+        font-size: 20px;
+        
+    
+    }
+    .banner-section .second-image-wrapper {
+        width: 200px;
+        
+    }
+
+} 
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+
+    .first-details{
+        margin-bottom: 10px;
+    }
+    .navbar{
+        margin-left: 20px;
+        margin-right: 20px;
+         
+        width: calc(100%  - 40px);
+    }
+
+    /* .banner-section .section-content{
+        max-width: 500px;
+    } */
+    .banner-section .section-content .title {
+        font-size: 30px;
+        
+    
+    }
+
+    .banner-section .section-content .title {
+        font-size: 40px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    
+    }
+
+    .banner-section .section-content .subtitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+    
+    }
+    .banner-section .second-image-wrapper {
+        width: 200px;
+        
+    }
+
+    .banner-section .section-content :is(.title, .subtitle,) {
+        max-width: 100%;
+    
+    }
+    .first-details p  {
+        max-width: 100%;
+        margin: 30px auto 50px;
+        font-size: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+        border: 1px solid red;
+         align-items: center;
+         justify-items: center;
+         margin: auto;
+       
+    }
+    
+    .aboutimg{
+        
+        justify-content: center;
+        width: 300px;
+    }
+    .myabout {
+        margin: 0;
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutcontent{
+        margin: auto;
+        border: 1px solid red;
+        width: 300px;
+     
+    }
+
+    .about-text {
+        margin: 0px;
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    /* .myabout img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 100%;
+    } */
+   
+  
+} 
