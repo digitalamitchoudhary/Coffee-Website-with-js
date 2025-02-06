@@ -486,6 +486,9 @@
            transition: 0.3s ease;
        }
 
+       .contact-section{
+        padding: 50px 0 50px;
+        }
        .contact-section .section-title {
            text-align: center;
            padding: 20px 0 50px;

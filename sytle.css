@@ -530,12 +530,14 @@ header {
 .footer-section {
     padding: 20px 0;
     background: var(--dark-color);
+    position: relative;
     
   }
   .footer-section .section-content{
     display: flex;
     align-items: center;
     color: var(--white-color);
+    margin-bottom: 50px;
    
   }
   
@@ -554,6 +556,33 @@ header {
     color: white;
   }
 
-
+    /* Footer styling */
+.su {
+      position: absolute;
+      bottom: 0px; /* Keeps it 50px from the bottom */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      background-color: #181516;
+      text-align: center;
+      padding: 10px;
+   }
+  
+  /* Custom link styling */
+  .custom-link {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+  }
+  
+  .custom-link .heart {
+      color: red;
+  }
+  
+  /* Hover effect on the footer link */
+  .custom-link:hover {
+      text-decoration: underline;
+  }
 
   
