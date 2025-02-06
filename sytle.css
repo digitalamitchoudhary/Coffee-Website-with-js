@@ -244,7 +244,7 @@ header {
     /* border: 1px solid rgb(55, 158, 14) ; */
     width: 49%;
     align-items: center;
-    min-height: 60vh; 
+    /* min-height: 60vh;  */
     display: flex;
    
 }
@@ -432,6 +432,7 @@ header {
   
 .gallery-item{
   /* border: 1px solid red; */
+   
   overflow: hidden;
   border-radius: var(--border-radius-s);
   width: calc(100% / 3 - 12px);
@@ -509,7 +510,7 @@ header {
     .contact-section .contact-form .submit-button {
     padding: 10px 28px;
     outline: none;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border: 1px solid var(--primary-color);
     border-radius: var(--border-radius-m);
     background: var(--primary-color);
